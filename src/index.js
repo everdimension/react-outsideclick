@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 
-class OutsideClick extends React.Component {
-  static propTypes = {
-    children: PropTypes.element.isRequired,
-    onClick: PropTypes.func.isRequired,
-  };
+const propTypes = {
+  children: PropTypes.element.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
+class OutsideClick extends React.Component {
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
@@ -40,5 +40,7 @@ class OutsideClick extends React.Component {
     });
   }
 }
+
+OutsideClick.propTypes = propTypes;
 
 export default OutsideClick;
