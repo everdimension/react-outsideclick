@@ -1,6 +1,6 @@
 {
   "name": "react-outsideclick",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react wrapper component for handling clicks outside target elements",
   "main": "lib/index.js",
   "scripts": {
