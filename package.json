@@ -18,7 +18,7 @@
     "document click",
     "close on close"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/everdimension/react-outsideclick.git"
