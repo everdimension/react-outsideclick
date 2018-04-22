@@ -19,6 +19,10 @@
     "close on close"
   ],
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/everdimension/react-outsideclick.git"
+  }
   "peerDependencies": {
     "prop-types": "^15.6.1"
   },
