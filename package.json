@@ -2,10 +2,11 @@
   "name": "react-outsideclick",
   "version": "1.0.2",
   "description": "A react wrapper component for handling clicks outside target elements",
-  "main": "lib/index.js",
+  "main": "lib/react-outsideclick.js",
+  "module": "lib/react-outsideclick.es.js",
   "scripts": {
     "start": "npm run styleguide",
-    "build": "./scripts/build.sh",
+    "build": "rollup -c",
     "prepublish": "npm run build",
     "styleguide": "styleguidist server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,8 +23,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/everdimension/react-outsideclick.git"
-  }
+  },
   "peerDependencies": {
+    "react": "^16.3.2",
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
@@ -34,6 +36,8 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-styleguidist": "^7.0.8",
+    "rollup": "^0.58.1",
+    "rollup-plugin-babel": "^3.0.3",
     "webpack": "^4.6.0"
   }
 }
