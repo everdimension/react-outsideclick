@@ -27,7 +27,7 @@
     "url": "https://github.com/everdimension/react-outsideclick.git"
   },
   "peerDependencies": {
-    "react": "^16.3.2",
+    "react": "^16.3.0",
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
