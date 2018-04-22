@@ -1,5 +1,20 @@
+const pkg = require('./package.json');
+
 module.exports = {
-  components: 'src/index.js',
+  sections: [
+    {
+      description: 'Github: https://github.com/everdimension/react-outsideclick',
+    },
+    {
+      components: 'src/index.js',
+    },
+  ],
+  showCode: true,
+  showSidebar: false,
+  ribbon: {
+    url: pkg.repository.url,
+    text: 'Fork me on GitHub',
+  },
   webpackConfig: {
     module: {
       rules: [

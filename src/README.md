@@ -10,7 +10,7 @@ initialState = { clicks: 0 };
       style={{
         padding: '1.5rem',
         width: 300,
-        backgroundColor: '#eee',
+        backgroundColor: 'whitesmoke',
       }}
     >
       Number of clicks outside this box: {state.clicks}
