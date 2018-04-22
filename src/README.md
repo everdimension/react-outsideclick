@@ -9,7 +9,7 @@ initialState = { clicks: 0 };
     <div
       style={{
         padding: '1.5rem',
-        width: 300,
+        maxWidth: 300,
         backgroundColor: 'whitesmoke',
       }}
     >
