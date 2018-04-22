@@ -4,8 +4,10 @@
   "description": "A react wrapper component for handling clicks outside target elements",
   "main": "lib/index.js",
   "scripts": {
+    "start": "npm run styleguide",
     "build": "./scripts/build.sh",
     "prepublish": "npm run build",
+    "styleguide": "styleguidist server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "everdimension",
@@ -18,16 +20,16 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0"
+    "prop-types": "^15.6.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-core": "^6.10.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
-    "react": "^15.2.0",
-    "react-dom": "^15.2.0",
-    "webpack": "^1.13.1"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-styleguidist": "^7.0.8",
+    "webpack": "^4.6.0"
   }
 }
