@@ -1,7 +1,6 @@
-src
+dist
 scripts
 examples
 webpack.config.js
 .babelrc
 .eslintrc
-bower.json

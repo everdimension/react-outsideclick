@@ -1,0 +1,21 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "dist"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2015", "dom"],
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "lib",
+    "declarationMap": true,
+    "sourceMap": true,
+    "emitDeclarationOnly": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

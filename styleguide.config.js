@@ -6,7 +6,7 @@ module.exports = {
       description: 'Github: https://github.com/everdimension/react-outsideclick',
     },
     {
-      components: 'src/index.js',
+      components: 'src/index.tsx',
     },
   ],
   showCode: true,
@@ -20,7 +20,7 @@ module.exports = {
       rules: [
         // Babel loader, will use your project’s .babelrc
         {
-          test: /\.jsx?$/,
+          test: /\.(js|jsx|ts|tsx)?$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
         },

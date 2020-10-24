@@ -1,10 +1,10 @@
 ```js
-initialState = { clicks: 0 };
+const [clicks, setClicks] = React.useState(0);
 
 <div style={{ padding: '2rem' }}>
   <OutsideClick
     style={{ display: 'inline-block' }}
-    onClickOutside={() => setState(({ clicks }) => ({ clicks: clicks + 1 }))}
+    onClickOutside={() => setClicks(n => n + 1)}
   >
     <div
       style={{
@@ -13,7 +13,7 @@ initialState = { clicks: 0 };
         backgroundColor: 'whitesmoke',
       }}
     >
-      Number of clicks outside this box: {state.clicks}
+      Number of clicks outside this box: {clicks}
     </div>
   </OutsideClick>
 </div>;
