@@ -1,18 +1,22 @@
-import babel from 'rollup-plugin-babel';
-import pkg from './package.json';
+import babel from "@rollup/plugin-babel";
+import pkg from "./package.json";
 
 export default {
-  input: 'src/index.js',
+  input: "src/index.tsx",
   output: [
     {
       file: pkg.main,
-      format: 'cjs',
+      format: "cjs",
     },
     {
       file: pkg.module,
-      format: 'es',
+      format: "es",
     },
   ],
   external: Object.keys(pkg.peerDependencies),
-  plugins: [babel()],
+  plugins: [
+    babel({
+      extensions: [".tsx"],
+    }),
+  ],
 };

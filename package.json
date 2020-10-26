@@ -6,7 +6,9 @@
   "module": "lib/react-outsideclick.es.js",
   "scripts": {
     "start": "npm run styleguide",
-    "build": "rollup -c",
+    "build": "npm-run-all --sequential build:lib build:types",
+    "build:lib": "rollup -c",
+    "build:types": "tsc",
     "prepublish": "npm run build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
@@ -27,20 +29,23 @@
     "url": "https://github.com/everdimension/react-outsideclick.git"
   },
   "peerDependencies": {
-    "react": "^16.3.0",
-    "prop-types": "^15.6.1"
+    "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@types/react": "^16.9.53",
+    "babel-loader": "^8.1.0",
     "gh-pages": "^2.0.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-styleguidist": "^8.0.6",
-    "rollup": "^0.58.1",
-    "rollup-plugin-babel": "^3.0.3",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-styleguidist": "^11.1.1",
+    "rollup": "^2.32.1",
+    "typescript": "^4.0.3",
     "webpack": "^4.6.0"
   }
 }
